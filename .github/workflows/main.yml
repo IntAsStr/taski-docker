@@ -19,6 +19,7 @@ jobs:
           POSTGRES_USER: django_user
           POSTGRES_PASSWORD: django_password
           POSTGRES_DB: django_db
+          DJANGO_SETTINGS_MODULE: backend.settings
         ports:
           - 5432:5432
         # Эта конструкция описывает проверку готовности сервиса postgres
